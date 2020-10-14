@@ -13,6 +13,10 @@ public class Profesor extends Human {
     void isPhd() {
 
     }
+
+    public static void main(String[] args) {
+
+    }
 }
 
 class PhdProfessor extends Profesor {
