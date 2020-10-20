@@ -1,1 +1,0 @@
-# fasttrackit-practice
