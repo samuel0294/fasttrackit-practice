@@ -1,5 +1,5 @@
 package ro.fasttrackit.classroom;
 
-public class Human {
+public class Human<T extends Human> {
 
 }

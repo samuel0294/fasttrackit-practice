@@ -2,7 +2,7 @@ package ro.fasttrackit.classroom;
 
 import java.time.LocalDate;
 
-public class Profesor extends Human implements Humann {
+public class Profesor extends Human<Human> implements Humann {
     private String lastName;
     private String firstName;
     private LocalDate dateobirth;
