@@ -1,17 +1,16 @@
-package ro.fasttrackit.classroom;
+package ro.fasttrackit.classroom.c08;
+
 import java.util.Scanner;
-public class PasswordException {
+
+public class PasswordChecker {
     public static void main(String[] args) throws Exception {
         System.out.println("Enter a password.");
         Scanner sc = new Scanner(System.in);
 
         String password = sc.next();
 
-        try {
+
             validatePassword(password);
-        } catch (PasswordException e) {
-            System.out.println(e.getMessage());
-        }
     }
 
     static void validatePassword(String password) throws Exception {
@@ -51,16 +50,5 @@ public class PasswordException {
         }
 
         System.out.println("Valid password.");
-    }
-
-    static class PasswordException extends Exception {
-
-        public PasswordException() {
-            super("Invalid password");
-        }
-
-        public PasswordException(String message) {
-            super("Invalid password: " + message);
-        }
     }
 }
