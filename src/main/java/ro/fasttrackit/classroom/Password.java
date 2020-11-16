@@ -40,18 +40,47 @@ public class Password {
                 return false;
             }
         }
-        String upperCase = "(.*[A-Z].*)";
-        if(!password.matches(upperCase)){
-            System.out.println("Password must contain at least one capital letter.");
-            return false;
+
+
+        if (true) {
+            int count = 0;
+
+
+            for (int i = 65; i <= 90; i++) {
+
+                char c = (char)i;
+
+                String str1 = Character.toString(c);
+                if (password.contains(str1)) {
+                    count = 1;
+                }
+            }
+            if (count == 0) {
+                System.out.println("Password must contain at least one capital letter.");
+                return false;
+            }
+        }
+        if (true) {
+            int count = 0;
+
+
+            for (int i = 90; i <= 122; i++) {
+
+
+                char c = (char)i;
+                String str1 = Character.toString(c);
+
+                if (password.contains(str1)) {
+                    count = 1;
+                }
+            }
+            if (count == 0) {
+                System.out.println("Password must contain at least one lower case letter.");
+                return false;
+            }
         }
 
-        String lowerCase = "(.*[a-z].*)";
-        if(!password.matches(lowerCase)){
-            System.out.println("Password must contain at least one lower case letter.");
-            return false;
-        }
-
+        // if all conditions fails
         return true;
     }
 }
